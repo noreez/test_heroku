@@ -27,7 +27,7 @@ request(
         push({
             key: '186163-45b71ef0-9c3a-0138-af4c-0e34b02daa39',//Widget Key
             data: { 
-                "item": 0,
+                "item": counter,
                 "min": {
                   "value": 0
                 },
