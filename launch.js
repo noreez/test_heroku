@@ -2,7 +2,7 @@ var request = require('request');
 counter = 0 ;
 request(
     {
-        url : "http://localhost:3000/api/users"
+        url : "https://backtosurvey.smart2survey.fr/"
     },
     function (error, response, body) {
         if(error){
