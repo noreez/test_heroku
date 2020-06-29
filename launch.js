@@ -2,7 +2,8 @@ var request = require('request');
 counter = 0 ;
 request(
     {
-        url : "https://backtosurvey.smart2survey.fr/"
+        rejectUnauthorized: false, 
+        url : "https://backtosurvey.smart2survey.fr/api/users"
     },
     function (error, response, body) {
         if(error){
@@ -26,7 +27,7 @@ request(
         push({
             key: '186163-45b71ef0-9c3a-0138-af4c-0e34b02daa39',//Widget Key
             data: { 
-                "item": counter,
+                "item": 0,
                 "min": {
                   "value": 0
                 },
